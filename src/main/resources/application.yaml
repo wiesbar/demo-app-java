@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: demo-application
+  profiles:
+    default: calculator
+  web:
+    error:
+      whitelabel:
+        enabled: false

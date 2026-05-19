@@ -1,0 +1,15 @@
+[versions]
+spring-boot  = "4.0.5"
+spotless     = "7.0.2"
+jspecify     = "1.0.0"
+errorprone   = "2.36.0"
+nullaway     = "0.12.3"
+
+[plugins]
+spring-boot  = { id = "org.springframework.boot",  version.ref = "spring-boot" }
+spotless     = { id = "com.diffplug.spotless",      version.ref = "spotless" }
+errorprone   = { id = "net.ltgt.errorprone",        version = "4.1.0" }
+
+[libraries]
+spring-boot-bom = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "spring-boot" }
+jspecify        = { module = "org.jspecify:jspecify",                             version.ref = "jspecify" }
